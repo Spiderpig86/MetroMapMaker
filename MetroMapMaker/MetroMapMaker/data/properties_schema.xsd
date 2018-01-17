@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <!-- XML Schema Generated from XML Document on Fri Oct 27 2017 18:14:05 GMT+0900 (Korea Standard Time) -->
+    <!-- with XmlGrid.net Free Online Service http://xmlgrid.net -->
+    <xs:element name="properties">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="property_list">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="property" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:attribute name="name" type="xs:string"/>
+                                    <xs:attribute name="value" type="xs:string"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="property_options_list">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="property_options" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="option" maxOccurs="unbounded" type="xs:string"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="name" type="xs:string"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

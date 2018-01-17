@@ -1,0 +1,195 @@
+/*
+    This style sheet stylizes the controls inside our
+    MetroMapMaker JavaFX application. Note that controls
+    in the UI must have the same class as those below in 
+    order to be rendered using those properties.
+
+    @author Richard McKenna
+    @author Stanley Lim
+    @version 1.0
+*/
+
+/* Redefine base colors */
+.root {
+    -fx-base: rgb(50, 50, 50);
+    -fx-background: rgb(50, 50, 50);
+
+    /* make controls (buttons, thumb, etc.) slightly lighter */
+    -fx-color: derive(-fx-base, 10%);
+
+    /* text fields and table rows background */
+    -fx-control-inner-background: rgb(20, 20, 20);
+    /* version of -fx-control-inner-background for alternative rows */
+    -fx-control-inner-background-alt: derive(-fx-control-inner-background, 2.5%);
+
+    /* text colors depending on background's brightness */
+    -fx-light-text-color: rgb(220, 220, 220);
+    -fx-mid-text-color: rgb(100, 100, 100);
+    -fx-dark-text-color: rgb(20, 20, 20);
+
+    /* A bright blue for highlighting/accenting objects.  For example: selected
+     * text; selected items in menus, lists, trees, and tables; progress bars */
+    -fx-accent: rgb(0, 80, 100);
+
+    /* color of non-focused yet selected elements */
+    -fx-selection-bar-non-focused: rgb(50, 50, 50);
+}
+
+/* Make text components white */
+.label {
+    -fx-text-fill: #fff;
+}
+
+.button {
+    -fx-border-radius: 0;
+    -fx-background-radius: 0 0;
+}
+
+/* Fix derived prompt color for text fields */
+.text-input {
+    -fx-prompt-text-fill: derive(-fx-control-inner-background, +50%);
+}
+
+/* Keep prompt invisible when focused (above color fix overrides it) */
+.text-input:focused {
+    -fx-prompt-text-fill: transparent;
+}
+
+/* Fix scroll bar buttons arrows colors */
+.scroll-bar > .increment-button > .increment-arrow,
+.scroll-bar > .decrement-button > .decrement-arrow {
+    -fx-background-color: -fx-mark-highlight-color, rgb(220, 220, 220);
+}
+
+.scroll-bar > .increment-button:hover > .increment-arrow,
+.scroll-bar > .decrement-button:hover > .decrement-arrow {
+    -fx-background-color: -fx-mark-highlight-color, rgb(240, 240, 240);
+}
+
+.scroll-bar > .increment-button:pressed > .increment-arrow,
+.scroll-bar > .decrement-button:pressed > .decrement-arrow {
+    -fx-background-color: -fx-mark-highlight-color, rgb(255, 255, 255);
+}
+
+/* MAIN APPLICATION STYLING AND GLOBAL STYLING */
+.color-picker {
+    -fx-padding: 2px;
+}
+
+.center {
+    -fx-alignment: center;
+}
+
+.edit_toolbar {
+    -fx-border-width: 0 2px 0 0;
+    -fx-border-color: #777;
+}
+
+.edit_toolbar_row {
+    -fx-spacing: 10;
+    /*-fx-background-color: #f4f4f4;*/
+    -fx-background-radius: 5.0;
+    -fx-padding: 15;
+    -fx-border-width: 0 0 2px 0;
+    -fx-border-color: #777;
+}
+
+.color_chooser_pane {
+    -fx-background-color:seashell;
+    -fx-padding: 0px;
+}
+
+.color_chooser_control {
+    -fx-font-weight:bold;
+    -fx-font-size:20;     
+}
+
+.bordered_pane {
+    /*-fx-background-color: #f4f4f4;*/
+    /*-fx-background-radius: 5.0;*/
+    -fx-padding: 15;
+    -fx-spacing: 10;
+    -fx-border-width: 2px;
+    -fx-border-color: #777;
+}
+
+.button.edit_toolbar_button {
+    -fx-effect: dropshadow(gaussian, rgba(34, 34, 34, 0.1), 1, 20.0, 0, 1);
+    -fx-padding: 10px;
+    -fx-background-color: #68EFAD;
+    -fx-background-radius: 3;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #306e50;
+    -fx-font-weight: normal;
+    -fx-font-size: 14px;;
+    -fx-border-insets: 2px;
+}
+
+.button.edit_toolbar_button:hover {
+    -fx-background-color: #69dd9a;
+}
+
+.edit_toolbar_label {
+    -fx-font-size: 16;
+    -fx-font-weight: 700;
+}
+
+/* Style the slider */
+.slider {
+    -fx-control-inner-background: #68EFAD;
+}
+
+.slider:hover {
+    -fx-control-inner-background: #69dd9a;
+}
+
+/* WELCOME DIALOG STYLING */
+.welcome-center {
+    -fx-alignment: center ;
+    -fx-border-color: rgb(50, 50, 50);
+    -fx-border-width: 0 0 0 2px;
+    -fx-border-style: solid;
+}
+
+.welcome-label {
+    -fx-font-size: 32;
+    -fx-font-weight: 300;
+    -fx-text-alignment: center;
+}
+
+.welcome-recent-pane {
+    -fx-background-color: #42b17b;
+    -fx-min-width: 375px;
+    -fx-effect: innershadow(three-pass-box, rgba(34, 34, 34, 0.4), 12, 0.1, -2, 0);
+}
+
+.welcome-recent-label {
+    -fx-font-size: 24;
+    -fx-font-weight: 300;
+    -fx-text-alignment: center;
+}
+
+.button.welcome-create-btn {
+    -fx-background-color: #68EFAD;
+    -fx-text-alignment: center;
+    -fx-text-fill: #222;
+    -fx-font-weight: 700;
+}
+
+.button.welcome-create-btn:hover {
+    -fx-background-color: #69dd9a;
+}
+
+.recent-item:hover {
+    -fx-background-color: #43BF88;
+}
+
+.recent-item-title {
+    -fx-font-size: 20;
+    -fx-text-fill: #fff;
+}
+
+.recent-item-subtitle {
+    -fx-font-size: 16;
+    -fx-text-fill: #eee;
+}

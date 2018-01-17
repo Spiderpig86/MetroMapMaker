@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DesktopJavaFramework/DesktopJavaFramework.iml" filepath="$PROJECT_DIR$/DesktopJavaFramework/DesktopJavaFramework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MetroMapMaker/MetroMapMaker.iml" filepath="$PROJECT_DIR$/MetroMapMaker/MetroMapMaker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PropertiesManager/PropertiesManager.iml" filepath="$PROJECT_DIR$/PropertiesManager/PropertiesManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jTPS/jTPS.iml" filepath="$PROJECT_DIR$/jTPS/jTPS.iml" />
+    </modules>
+  </component>
+</project>

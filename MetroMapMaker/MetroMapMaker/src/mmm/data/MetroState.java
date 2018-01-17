@@ -1,0 +1,10 @@
+package mmm.data;
+
+public enum MetroState {
+    ADDING_ELEMENT,
+    SELECTING_ELEMENT,
+    DRAGGING_ELEMENT,
+    ADDING_STATIONS_TO_LINE,
+    REMOVING_STATIONS_FROM_LINE,
+    DRAGGING_NOTHING,
+}

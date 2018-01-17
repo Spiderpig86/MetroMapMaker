@@ -1,0 +1,89 @@
+
+{
+    "name":"TestMap",
+    "lines":[
+        {
+            "name":"Red",
+            "circular":false,
+            "color":{
+                "red":0.800000011920929,
+                "green":0.20000000298023224,
+                "blue":0.20000000298023224,
+                "alpha":1.0
+            },
+            "station_names":[
+                "Red 1",
+                "Cyan Red"
+            ]
+        },
+        {
+            "name":"Violet",
+            "circular":false,
+            "color":{
+                "red":0.4000000059604645,
+                "green":0.3019607961177826,
+                "blue":0.7019608020782471,
+                "alpha":1.0
+            },
+            "station_names":[
+                "Cyan Violet 1",
+                "Violet 2",
+                "Cyan Violet 2"
+            ]
+        },
+        {
+            "name":"Cyan",
+            "circular":false,
+            "color":{
+                "red":0.025455523282289505,
+                "green":0.9426054954528809,
+                "blue":0.9704918265342712,
+                "alpha":1.0
+            },
+            "station_names":[
+                "Cyan 1",
+                "Cyan Violet 1",
+                "Cyan Red",
+                "Cyan 3",
+                "Cyan Violet 2"
+            ]
+        }
+    ],
+    "stations":[
+        {
+            "name":"Cyan Red",
+            "x":204.0,
+            "y":347.0
+        },
+        {
+            "name":"Red 1",
+            "x":469.0,
+            "y":294.0
+        },
+        {
+            "name":"Violet 2",
+            "x":392.0,
+            "y":467.0
+        },
+        {
+            "name":"Cyan Violet 2",
+            "x":182.0,
+            "y":533.0
+        },
+        {
+            "name":"Cyan 3",
+            "x":167.0,
+            "y":461.0
+        },
+        {
+            "name":"Cyan Violet 1",
+            "x":198.0,
+            "y":260.0
+        },
+        {
+            "name":"Cyan 1",
+            "x":155.5,
+            "y":175.5
+        }
+    ]
+}

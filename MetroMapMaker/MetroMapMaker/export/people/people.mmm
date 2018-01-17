@@ -1,0 +1,52 @@
+
+{
+    "name":"people",
+    "lines":[
+        {
+            "7 train":"name",
+            "circular":false,
+            "color":{
+                "red":0.20000000298023224,
+                "green":0.10196078568696976,
+                "blue":0.501960813999176,
+                "alpha":1.0
+            },
+            "station_names":[
+                "Main St",
+                "Willets Pt",
+                "111st"
+            ]
+        },
+        {
+            "E train":"name",
+            "circular":false,
+            "color":{
+                "red":0.10196078568696976,
+                "green":0.20000000298023224,
+                "blue":0.6000000238418579,
+                "alpha":1.0
+            },
+            "station_names":[
+                "Willets Pt",
+                "Main St"
+            ]
+        }
+    ],
+    "stations":[
+        {
+            "name":"Willets Pt",
+            "x":288.0,
+            "y":242.0
+        },
+        {
+            "name":"Main St",
+            "x":455.0,
+            "y":193.0
+        },
+        {
+            "name":"111st",
+            "x":142.0,
+            "y":236.0
+        }
+    ]
+}
